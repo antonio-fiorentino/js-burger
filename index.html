@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Burger</title>
+  </head>
+  <body>
+
+    <h1>Create Your Burger</h1>
+
+    <input class="nome" type="text" name="nome-burger" placeholder="Name Your Burger" value="">
+
+    <h2>Ingredients</h2>
+
+    <section class="ingredienti">
+
+      <div class="cibo">
+        Cheese
+        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="">
+      </div>
+
+      <div class="cibo">
+        Egg
+        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="">
+
+      </div>
+
+      <div class="cibo">
+        Tomato
+        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="">
+
+      </div>
+
+      <div class="cibo">
+        Lettuce
+        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="">
+
+      </div>
+
+      <div class="cibo">
+        Mustard
+        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="">
+
+      </div>
+
+      <div class="cibo">
+        Ketchup
+        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="">
+
+      </div>
+
+    </section>
+
+    <label>Discount Coupon</label>
+    <input class="coupon" type="text" name="sconto" placeholder="12354ABCDEF" value="">
+
+    <div>
+      <button id='button-submit' type="button" name="button">Calculate</button>
+    </div>
+
+    <footer>
+
+      <div>
+        Your Price
+      </div>
+
+      <div class="prezzo">
+
+      </div>
+
+    </footer>
+
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</html>
