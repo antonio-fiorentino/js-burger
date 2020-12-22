@@ -1,14 +1,12 @@
-var nomeBurger = document.getElementsByClassName('nome')[0];
-var checkboxes = document.getElementsByClassName('ingredienti')[0].getElementsByTagName('input');
+var minIngredienti = 2;
+var burgerCost = 50;
+var discount = 0.2;
+var coupons = ['12GD54PEOR','HF4hydsiu8','ter7EPD5sa']
 
 
-document.getElementById("button-submit").addEventListener("click", function() {
-  var counterCheckedElements = 0;
-  console.log('Il nome del panino è ' + nomeBurger.value)
-  for(var i = 0; i < checkboxes.length; i++) {
-    if(checkboxes[i].checked === true) {
-      counterCheckedElements += 1;
-      console.log(counterCheckedElements)
-    }
-  }
-});
+var nomeBurger = document.getElementById(nome);
+console.log('Il nome del Burger è: ' + nomeBurger);
+
+var containerIngredienti = document.getElementsByClassName(ingredienti);
+var checkList = ingredienti.getElementsByTagName(input);
+var totale = document.getElementById(prezzo);
