@@ -25,11 +25,15 @@ document.getElementById('button-submit').addEventListener("click", function(){
     alert('Scegli un nome per il tuo Burger');
   }else if (counterValidIngredienti < 2) {
     alert('Selezionare minimo 2 ingredienti');
-  }else {
-    if (coupons.indexOf(coupon.value) !== -1)  {
+  }else if (coupons.indexOf(coupon.value) !== -1)  {
       sconto = costo-(costo * discount);
       prezzo.innerText = '$' + sconto;
-    }
+
+  }else {
+    prezzo.innerText = '$' + costo;
+
   }
-  prezzo.innerText = '$' + costo;
+
+  
+
 })
