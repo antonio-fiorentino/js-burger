@@ -27,7 +27,7 @@ document.getElementById('button-submit').addEventListener("click", function(){
     alert('Selezionare minimo 2 ingredienti');
   }else {
     if (coupons.indexOf(coupon.value) !== -1)  {
-      sconto = costo * discount;
+      sconto = costo-(costo * discount);
       prezzo.innerText = '$' + sconto;
     }
   }
