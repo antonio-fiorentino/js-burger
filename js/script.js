@@ -4,9 +4,9 @@ var discount = 0.2;
 var coupons = ['12GD54PEOR','HF4hydsiu8','ter7EPD5sa']
 
 
-var nomeBurger = document.getElementById(nome);
+var nomeBurger = document.getElementById('nome');
 console.log('Il nome del Burger è: ' + nomeBurger);
 
-var containerIngredienti = document.getElementsByClassName(ingredienti);
-var checkList = ingredienti.getElementsByTagName(input);
-var totale = document.getElementById(prezzo);
+var containerIngredienti = document.getElementsByClassName('ingredienti')[0];
+var checkList = containerIngredienti.getElementsByTagName('input');
+var totale = document.getElementById('prezzo');
