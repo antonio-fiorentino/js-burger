@@ -6,74 +6,74 @@
     <title>Burger</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Create Your Burger</h1>
 
-    <h1>Create Your Burger</h1>
+      <input id="nome" type="text" name="nome-burger" placeholder="Name Your Burger" value="">
 
-    <input id="nome" type="text" name="nome-burger" placeholder="Name Your Burger" value="">
+      <h2>Ingredients</h2>
 
-    <h2>Ingredients</h2>
+      <section class="ingredienti">
 
-    <section class="ingredienti">
+        <div class="cibo">
+          Cheese
+          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="5">
+          <span>add</span>
 
-      <div class="cibo">
-        Cheese
-        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="5">
-        <span>add</span>
+        </div>
 
-      </div>
+        <div class="cibo">
+          Egg
+          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="2">
+          <span>add</span>
+        </div>
 
-      <div class="cibo">
-        Egg
-        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="2">
-        <span>add</span>
-      </div>
+        <div class="cibo">
+          Tomato
+          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="4">
+          <span>add</span>
+        </div>
 
-      <div class="cibo">
-        Tomato
-        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="4">
-        <span>add</span>
-      </div>
+        <div class="cibo">
+          Lettuce
+          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="3">
+          <span>add</span>
+        </div>
 
-      <div class="cibo">
-        Lettuce
-        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="3">
-        <span>add</span>
-      </div>
+        <div class="cibo">
+          Mustard
+          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="6">
+          <span>add</span>
 
-      <div class="cibo">
-        Mustard
-        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="6">
-        <span>add</span>
+        </div>
 
-      </div>
+        <div class="cibo">
+          Ketchup
+          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="10">
+          <span>add</span>
+        </div>
 
-      <div class="cibo">
-        Ketchup
-        <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="10">
-        <span>add</span>
-      </div>
+      </section>
 
-    </section>
-
-    <label>Discount Coupon</label>
-    <input class="coupon" type="text" name="sconto" placeholder="12354ABCDEF" value="">
-
-    <div>
-      <button id='button-submit' type="button" name="button">Calculate</button>
-    </div>
-
-    <footer>
+      <label>Discount Coupon</label>
+      <input class="coupon" type="text" name="sconto" placeholder="12354ABCDEF" value="">
 
       <div>
-        Your Price
+        <button id='button-submit' type="button" name="button">Calculate</button>
       </div>
 
-      <div id="prezzo">
+      <footer>
 
-      </div>
+        <div>
+          Your Price
+        </div>
 
-    </footer>
+        <div id="prezzo">
 
+        </div>
+
+      </footer>
+    </div>
     <script src="js/script.js" charset="utf-8"></script>
 
   </body>

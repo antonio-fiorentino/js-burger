@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-weight: bold;
+}
+
+body{
+  height: 100vh;
+}
+
+.container{
+  margin: auto;
+  width: 1000px;
+}

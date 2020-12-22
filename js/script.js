@@ -10,11 +10,12 @@ var coupon = document.getElementsByClassName('coupon');
 
 var counterValidIngredienti = 0;
 var costo;
+var sconto;
 
 document.getElementById('button-submit').addEventListener("click", function(){
-  console.log('Il nome del Burger è: ' + nomeBurger);
+  console.log('Il nome del Burger è: ' + nomeBurger.value);
   costo = burgerBaseCosto;
-  for (var i = 0; i < containerIngredienti.length; i++) {
+  for (var i = 0; i < checkboxList.length; i++) {
   if (checkboxList[i].checked) {
     counterValidIngredienti++;
     costo += parseInt(checkboxList[i].value);
@@ -27,6 +28,7 @@ document.getElementById('button-submit').addEventListener("click", function(){
   }else {
     if (coupons.indexOf(coupon.value) !== -1)  {
       sconto = costo * discount;
+      prezzo.innerText = '$'+sconto;
     }
   }
   prezzo.innerText = '$'+ costo;
