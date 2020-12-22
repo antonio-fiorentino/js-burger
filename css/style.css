@@ -4,6 +4,31 @@
   box-sizing: border-box;
 }
 
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+header{
+  background-color: #fdbb40;
+  height: 100px;
+  line-height: 100px;
+}
+
+header::after{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+#hamburger{
+  height: 100px;
+  width: 100px;
+}
+
 h1{
   font-weight: bold;
 }

@@ -6,7 +6,7 @@ var prezzo = document.getElementById('prezzo');
 var nomeBurger = document.getElementById('nome');
 var containerIngredienti = document.getElementsByClassName('ingredienti')[0];
 var checkboxList = containerIngredienti.getElementsByTagName('input');
-var coupon = document.getElementsByClassName('coupon');
+var coupon = document.getElementById('coupon');
 
 var counterValidIngredienti = 0;
 var costo;
@@ -28,8 +28,8 @@ document.getElementById('button-submit').addEventListener("click", function(){
   }else {
     if (coupons.indexOf(coupon.value) !== -1)  {
       sconto = costo * discount;
-      prezzo.innerText = '$'+sconto;
+      prezzo.innerText = '$' + sconto;
     }
   }
-  prezzo.innerText = '$'+ costo;
+  prezzo.innerText = '$' + costo;
 })
