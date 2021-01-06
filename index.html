@@ -9,61 +9,84 @@
     <div class="container">
       <header>
         <h1 class="fl">Create Your Burger</h1>
-        <img id="hamburger" class="fl" src="img/burger-top.png" alt="">
+        <img id="hamburger" class="fr" src="img/burger-top.png" alt="">
       </header>
 
       <input id="nome" type="text" name="nome-burger" placeholder="Name Your Burger" value="">
 
-      <h2>Ingredients</h2>
+      <div class="container-padding">
 
-      <section class="ingredienti">
 
-        <div class="cibo">
-          Cheese
-          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="5">
-          <span>add</span>
+        <h2>Ingredients</h2>
 
-        </div>
+        <section class="ingredienti">
 
-        <div class="cibo">
-          Egg
-          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="2">
-          <span>add</span>
-        </div>
+          <div class="container-flex">
+            <div class="cibo">
+              <img src="img/cheese.svg" alt="">
+              Cheese
+              <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="5">
+              <span>add</span>
 
-        <div class="cibo">
-          Tomato
-          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="4">
-          <span>add</span>
-        </div>
+            </div>
 
-        <div class="cibo">
-          Lettuce
-          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="3">
-          <span>add</span>
-        </div>
+            <div class="cibo">
+              <img src="img/fried-egg.svg" alt="">
+              Egg
+              <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="2">
+              <span>add</span>
+            </div>
 
-        <div class="cibo">
-          Mustard
-          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="6">
-          <span>add</span>
+          </div>
 
-        </div>
+          <div class="container-flex">
+            <div class="cibo">
+              <img src="img/tomato.svg" alt="">
+              Tomato
+              <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="4">
+              <span>add</span>
+            </div>
 
-        <div class="cibo">
-          Ketchup
-          <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="10">
-          <span>add</span>
-        </div>
+            <div class="cibo">
+              <img src="img/lettuce.svg" alt="">
+              Lettuce
+              <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="3">
+              <span>add</span>
+            </div>
+          </div>
 
-      </section>
+          <div class="container-flex">
+            <div class="cibo">
+              <img src="img/mustard.svg" alt="">
+              Mustard
+              <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="6">
+              <span>add</span>
 
-      <label>Discount Coupon</label>
-      <input id="coupon" type="text" name="sconto" placeholder="12354ABCDEF" value="">
+            </div>
 
-      <div>
-        <button id='button-submit' type="button" name="button">Calculate</button>
+            <div class="cibo">
+              <img src="img/ketchup.svg" alt="">
+              Ketchup
+              <input type="checkbox" class="ingredienti-checkbox" name="list[]" value="10">
+              <span>add</span>
+            </div>
+          </div>
+
+        </section>
+
+        <label>Discount Coupon</label>
+        <input id="coupon" type="text" name="sconto" placeholder="12354ABCDEF" value="">
+
       </div>
+
+        <div class="flex">
+          <div>
+
+            <button id='button-submit' type="button" name="button">Calculate</button>
+
+          </div>
+        </div>
+
 
       <footer>
 
